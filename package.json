@@ -1,0 +1,21 @@
+{
+  "name": "2-Weekly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.1",
+    "express-handlebars": "^6.0.2",
+    "supertest": "^6.1.6"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
