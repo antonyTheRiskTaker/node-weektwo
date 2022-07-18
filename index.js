@@ -13,6 +13,8 @@ const app = express();
 
 // Get all user generated modules into the application
 
+// (Line below) the stores directory serves as an in-server database (not the best practice)
+// (Line below) the config is used to access some data that is not supposed to be accessed directly
 const config = require("./stores/config.json")["development"]; // We use all the development paths
 const AuthChallenger = require("./AuthChallenger");
 const NoteService = require("./Service/NoteService");
@@ -35,6 +37,7 @@ app.set("view engine", "handlebars");
 app.use(express.static("public"));
 
 // Set up middleware
+// (Two lines below) these middlewares are used to process data sent via POST requests
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
